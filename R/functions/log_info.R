@@ -4,10 +4,10 @@ log_info <- function(
   if (verbose == TRUE) {
     cat(
       paste("[INFO][",
-            substr(Sys.time(), 12, 19),
-            "]: ",
-            message, "\n",
-            sep = ""
+        substr(Sys.time(), 12, 19),
+        "]: ",
+        message, "\n",
+        sep = ""
       )
     )
   }
