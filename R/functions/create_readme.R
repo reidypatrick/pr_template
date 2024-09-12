@@ -4,7 +4,7 @@ create_readme <- function(
   proj_name = sub(".*/([^/]+)$", "\\1", rstudioapi::getActiveProject()),
   description = "Project description goes here."
 ) {
-  
+
   # Define the content of the README
   lintr_badge_yml <- paste0(
     "[![lint-project](https://github.com/reidypatrick/",
@@ -13,13 +13,13 @@ create_readme <- function(
     proj_name,
     "/actions/workflows/lint-project.yaml)"
   )
-  
+
   content <- c(
     lintr_badge_yml,
     "",
-    
+
     paste0("# ", proj_name),
-    
+
     "",
     "## Description",
     description
